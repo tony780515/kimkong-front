@@ -12,7 +12,7 @@ body{
 }
 .founder{
     width: 100%;
-    background-image: url("./About_founder/P2-up_bg.png");
+    background-image: url("/images/02-origin/P2-up_bg.png");
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -74,7 +74,7 @@ img{
     height: 300px;
     margin: 0 auto;
     margin-top: 65%;
-    background-image: url("./About_founder/P2-up_left.png");
+    background-image: url("/images/02-origin/P2-up_left.png");
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -99,7 +99,7 @@ img{
 .intro_left_img{
     width: 1000px;
     height: auto;
-    background-image: url("./About_founder/P2-down_left.png");
+    background-image: url("/images/02-origin/P2-down_left.png");
     background-size: contain;
     background-repeat: no-repeat;
     /* margin: 0 10px; */
@@ -130,7 +130,7 @@ img{
     height: 150px;
     margin-top:10%;
     margin-left: 20%;
-    background-image: url("./About_founder/P2-down_right.png");
+    background-image: url("/images/02-origin/P2-down_right.png");
     background-repeat: no-repeat;
     
 }
@@ -150,7 +150,7 @@ img{
 
     .founder{
         width: 100%;
-        background-image: url("./About_founder/P2-up_bg.png");
+        background-image: url("/images/02-origin/P2-up_bg.png");
         background-size:cover;
         background-repeat: no-repeat;
     }
@@ -235,7 +235,7 @@ img{
     }
 
     .intro_left_img{
-        background-image: url("./About_founder/360px/P2-Top.png");
+        background-image: url("/images/02-origin/360px/P2-Top.png");
         margin: 0;
     }
 
@@ -244,7 +244,7 @@ img{
     }
     .intro_right_img{
         width: 100%;
-        background-image: url("./About_founder/360px/P2.png");
+        background-image: url("/images/02-origin/360px/P2.png");
         background-repeat: no-repeat;
         background-size: contain;
         margin: 0;
