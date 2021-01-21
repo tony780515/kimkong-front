@@ -555,55 +555,6 @@ footer i {
 }
 
 @media (max-width:360px) {
-    .swiper-container {
-        width: 90%;
-        height: 50%;
-        padding:20px 40px 20px 40px;
-    }
-    
-    .mobile-bg {
-        width: 100%;
-        height: 420px;
-        background-image: url(/images/01-index/最新消息底圖2.jpg);
-        background-size: cover;
-        background-position: top;
-      }
-
-    .text-slide {
-        background-image: url(/images/01-index/最新消息文字底圖.jpg);
-        background-position: right;
-        width: 100%;
-        height: 120px;
-        font-size: 15px;
-        font-weight: bold;
-        /* text-align: justify; */
-        color: black;
-        margin: 0;
-        padding: 4px;
-        position: relative;
-        top: 180px;
-    }  
-
-    .mobile-lead .mobile-photo1 {
-        height: 250px;
-        position: relative;
-        top: 100px;
-        margin-bottom: 160px;
-    }
-
-    .mobile-lead .mobile-photo2 {
-        height: 250px;
-        position: relative;
-        top: 50px;
-        margin-bottom: 110px;
-    }
-
-    .mobile-lead .mobile-photo3 {
-        height: 250px;
-        position: relative;
-        top: 50px;
-        margin-bottom: 130px;
-    }
 
     footer h2 {
         font-size: 25px;
