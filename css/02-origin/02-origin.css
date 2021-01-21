@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    background-color: #141A16;
+  
+}
+.founder{
+    width: 100%;
+    background-image: url("/images/02-origin/P2-up_bg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.top{
+    height: 200px;
+    width: 100%;
+}
+.content{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+}
+.left{
+    width: 40%;
+    height: 100%;
+
+}
+.right{
+    width: 60%;
+    height: 100%;
+    font-size: small;
+    position: relative;
+    
+}
+.right_img{
+    height: 1000px;
+    margin-left: 17%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 5px;
+  
+}
+img{
+    height: 100%;
+}
+.rightText{
+
+    color: rgb(255, 253, 246);
+    position: absolute;
+    bottom: -18%;
+    right: 15%;
+}
+
+.rightText span{
+    font-size: 21px;
+}
+
+.rightText p{
+    font-size: 30px;
+}
+.funder .left{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.left_img{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 65%;
+    background-image: url("/images/02-origin/P2-up_left.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.intro{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    position: relative;
+    background-color: #141A16;
+   
+}
+.intro_left{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    position: relative;
+    padding:0 0 150px 0;
+
+}
+
+.intro_left_img{
+    width: 1000px;
+    height: auto;
+    background-image: url("/images/02-origin/P2-down_left.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* margin: 0 10px; */
+    padding: 10px;
+
+        
+}
+
+.introText {
+    width: auto;
+    color: rgb(255, 253, 246);
+    font-size: 21px;
+    position: absolute;
+    top:18%;
+    left: 31%;    
+}
+.intro_left{
+    width: 60%;
+}
+.intro_left_img{
+    width: 100%;
+    margin-left: 200px;   
+}
+.intro_right{
+    width: 40%;
+}
+.intro_right_img{
+    height: 150px;
+    margin-top:10%;
+    margin-left: 20%;
+    background-image: url("/images/02-origin/P2-down_right.png");
+    background-repeat: no-repeat;
+    
+}
+
+@media screen and (max-width:900px){
+    
+    .left{
+        
+        display: none;
+    
+    }
+
+}
+
+
+@media screen and (max-width:360px){
+
+    .founder{
+        width: 100%;
+        background-image: url("/images/02-origin/P2-up_bg.png");
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    .content{
+        width: 100%;
+        height: 600px;
+        display: flex;
+    }
+    .left{
+        width: 0px;
+        display: block;
+    
+    }
+    .right{
+        width: 100%;
+        height: 100px;
+        font-size: small;
+        position: relative;
+        
+    }
+    .right_img{
+        width: 100%;
+        height: auto;
+        margin-left: 17%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 5px;
+      
+    }
+    img{
+       width: 100%;
+       height: 40%;
+    }
+    .rightText{
+        width: 220px;
+        bottom: 14%;
+        left: 12%;
+        line-height: 1.4;
+    }
+    
+    .rightText span{       
+        font-size: 14px;
+    }
+    
+    .rightText p{
+        font-size: 20px;
+    }
+    .funder .left{
+        width: 100%;
+        display: flex;
+     }
+
+    .intro{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        position: relative;
+        background-color: #141A16;
+       
+    }
+    .intro_left{
+        width: 100%;
+        height: 500px;
+    }
+    
+    .introText {
+        width: 80%;
+        font-size: 14px;
+        position: absolute;
+        left: 10%;
+        line-height: 1.4;
+      
+    }
+
+    .intro_left{
+        width: 100%;
+        padding: 0;
+        height: 300px;
+    
+    }
+
+    .intro_left_img{
+        background-image: url("/images/02-origin/360px/P2-Top.png");
+        margin: 0;
+    }
+
+    .intro_right{
+        width: 100%;
+    }
+    .intro_right_img{
+        width: 100%;
+        background-image: url("/images/02-origin/360px/P2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0;
+        
+    }
+
+}
+

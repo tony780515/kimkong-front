@@ -1,0 +1,626 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* navbar開始 */
+
+.hamburger-btn {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    height: 110px;
+    background-image: url(/images/01-index/footerBg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 2;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+nav .button{
+    width: 15%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+nav .logo {
+    width: 180px;
+    height: 180px;
+    background-image: url(/images/01-index/logo.png);
+    background-size: cover;
+    position: relative;
+    transition: 1s;
+    top: 15px;
+    animation: flip 1s forwards 0.3s;
+}
+
+nav .text1 {
+    font-size: 30px;
+    color: rgb(232,193, 53);
+    line-height: 100px;
+    position: relative;
+    top: 0px;
+    left: 10px;
+    transition: 0.3s;
+
+}
+
+nav .text2 {
+    font-size: 30px;
+    color:white;
+    position: relative;
+    line-height: 100px;
+    top: 0px;
+    right: 10px;
+    transition: 0.3s;
+    
+}
+
+.button:hover .text1{
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+.button:hover .text2{
+    position: relative;
+    top: 20px;
+    right: 25px;
+}
+
+.logo:hover {
+    animation: heartBeat; 
+    animation-duration: 0.8s; 
+    
+}
+
+/* scroll效果 */
+.logo.sm {
+    position: relative;
+    top: -50px;
+    transition: 1s;
+}
+
+.space {
+    width: 100%;
+    height: 100px;
+}
+
+/* navbar結束 */
+
+
+/* footer開始 */
+footer {
+    width: 100%;
+    height: 220px;
+    color: rgb(190, 190, 190);
+    overflow: hidden;
+}
+
+footer .bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/01-index/footerBg.png);
+    background-size: cover;
+    background-position: bottom;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutus {
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+}
+
+.contactus {
+    width: 33.3%;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+    
+}
+
+footer li{
+    line-height: 2;
+}
+
+footer h2 {
+    margin: 0;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+}
+
+.footerlogo {
+    margin-top: 15px;
+    width: 33.3%;
+    text-align: center;
+}
+
+.footerlogo .photo{
+    width: 120px;
+    height: 120px;
+    background-image: url(/images/01-index/footerlogo.png);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.footerlogo .photo:hover {
+    background-image: url(/images/01-index/logo2.png);
+}
+
+footer .texthover:hover {
+    color: rgb(232,193, 53);
+}
+
+footer i {
+    margin: 5px 5px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.fa-facebook-square:hover {
+    color: rgb(80, 117, 191);
+}
+
+.fa-line:hover {
+    color: rgb(1, 191, 5);
+}
+
+.fa-youtube-square:hover {
+    color: rgb(254, 1, 0);
+}
+
+.fa-instagram:hover {
+    color: rgb(194, 50, 159);
+}
+
+.contactus {
+    display: flex;
+    justify-content: center; 
+}
+
+.back_top {
+    position: relative;
+    right: -100px;
+    top: 50px;
+}
+
+.back_top .photo {
+    position: relative;
+    top: 0;
+    transition: 0.5s;
+}
+
+.back_top .text {
+    color: white;
+}
+
+.back_top:hover  .photo{
+    position: relative;
+    top: -15px;
+}
+
+/* footer結束 */
+
+/* 以下開始RWD縮版 */
+@media (max-width:1300px) {
+    
+
+    nav .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav .text1, nav .text2 {
+        font-size: 22px;
+    }
+
+    .logo.sm {
+        position: relative;
+        top: -20px;
+        transition: 1s;
+    }
+
+
+    .back_top {
+        position: relative;
+        right: -30px;
+    }
+}
+
+@media (max-width:1080px) {
+    nav {
+        width: 100%;
+        height: 90px;
+    }
+
+    nav .logo {
+        width: 130px;
+        height: 130px;
+        top: 15px;
+    }
+
+    nav .photo {
+        height: 100%;
+    }
+
+    nav img {
+        height: 100%;
+    }
+
+    nav .text1 {
+        font-size: 20px;
+        line-height: 80px;
+        position: relative;
+        top: 0px;
+        left: 10px;
+        transition: 0.3s;
+    }
+
+    nav .text2 {
+        font-size: 20px;
+        color:white;
+        position: relative;
+        line-height: 80px;
+        top: 0px;
+        right: 10px;
+        transition: 0.3s;  
+    }
+
+    .space {
+        width: 100%;
+        height: 90px;
+    }
+
+    
+}
+
+@media (max-width:960px) {
+    nav .button{
+        width: 20%;
+    }
+
+    nav {
+        width: 100%;
+        height: 80px;
+    }
+
+    nav .logo {
+        width: 110px;
+        height: 110px;
+        top: 5px;
+    }
+
+    nav .text1 {
+        font-size: 18px;
+        line-height: 70px;
+    }
+
+    nav .text2 {
+        font-size: 18px;
+        line-height: 70px;
+    }
+
+    .space {
+        width: 100%;
+        height: 80px;
+    }
+
+   
+
+    footer {
+        height: 200px; 
+    }
+
+    .footerlogo .photo{
+        width: 100px;
+        height: 100px;
+    }
+
+    footer i {
+        margin: 3px 3px;
+        font-size: 25px;
+    }
+
+    .back_top {
+        position: relative;
+        right: -20px;
+        top: 15px;
+    
+    }
+}
+
+@media (max-width:720px) {
+
+    nav .button {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: block;
+        /* cursor: pointer; */
+    }
+
+    .connect i{
+        font-size: 30px;
+        color: rgb(232,193, 53);
+        /* margin: 5px; */
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+
+    .connect ul{
+        /* display: none; */
+        width: 170px;
+        background-image: url(/images/01-index/footerBg.png);
+        background-size: cover;
+        line-height: 2.5;
+        list-style: none;
+        text-decoration: none;
+        z-index: 1;
+        position: absolute;
+        top: 64px;
+        left: -200px;
+        transition: 0.5s;
+    }
+
+    .connect a {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left:20px;
+    }
+
+    .connect:hover ul{
+        display: block;
+        top: 64px;
+        left: -35px;
+    }
+
+    .connect li:hover a {
+        color: rgb(232,193, 53);
+    }
+
+    nav {
+        display: initial;
+        
+    }
+
+    nav .logo{
+        width: 110px;
+        height: 110px;
+        top: 5px;
+        margin: auto;
+    }
+
+    .logo.sm {
+        position: relative;
+        top: -27px;
+        transition: 1s;
+    }
+
+
+    footer {
+        width: 100%;
+        height: auto;
+    }
+
+    footer .bg {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    footer .aboutus, .contactus{
+         width: 50%;
+    }
+
+    .footerlogo {
+        width: 100%;
+    }
+
+    footer h2 {
+         font-size: 30px;
+         margin-bottom: 20px;
+    }
+
+    footer li {
+         font-size: 20px;
+    }
+
+    .footerlogo {
+        margin-top: 15px;
+        text-align: center;
+        order: 1;
+    }
+
+    .back_top {
+        position: relative;
+        right: -40px;
+        top: 260px;
+    }
+   
+}
+
+@media (max-width:540px) {
+
+    footer h2 {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    footer li {
+        text-align: center;
+         font-size: 17px;
+    }
+    
+    .back_top {
+        position: relative;
+        right: 30px;
+        top: 210px;
+    }
+}
+
+@media (max-width:410px) {
+    .connect ul{
+        /* display: none; */
+        width: 160px;
+        background-image: url(/images/01-index/footerBg.png);
+        background-size: cover;
+        line-height: 2.5;
+        list-style: none;
+        text-decoration: none;
+        z-index: 1;
+        position: absolute;
+        top: 64px;
+        left: -200px;
+        transition: 0.5s;
+    }
+    footer .aboutus, .contactus{
+         width: 100%;
+    }
+
+    footer .contactus {
+        position: relative;
+        left: 10px;
+    }
+
+    .footerlogo {
+        width: 100%;
+    }
+
+    footer li {
+        text-align: center;
+         font-size: 20px;
+    }
+
+    .footerlogo {
+        width: 80%;
+        margin-top: 15px;
+        text-align: center;
+        order: 1;
+    }
+
+    footer h2 {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    footer li {
+        text-align: center;
+         font-size: 17px;
+    }
+
+    .back_top {
+        position: relative;
+        right: -80px;
+        top: 220px;
+    }
+
+}
+
+@media (max-width:360px) {
+    .swiper-container {
+        width: 90%;
+        height: 50%;
+        padding:20px 40px 20px 40px;
+    }
+    
+    .mobile-bg {
+        width: 100%;
+        height: 420px;
+        background-image: url(/images/01-index/最新消息底圖2.jpg);
+        background-size: cover;
+        background-position: top;
+      }
+
+    .text-slide {
+        background-image: url(/images/01-index/最新消息文字底圖.jpg);
+        background-position: right;
+        width: 100%;
+        height: 120px;
+        font-size: 15px;
+        font-weight: bold;
+        /* text-align: justify; */
+        color: black;
+        margin: 0;
+        padding: 4px;
+        position: relative;
+        top: 180px;
+    }  
+
+    .mobile-lead .mobile-photo1 {
+        height: 250px;
+        position: relative;
+        top: 100px;
+        margin-bottom: 160px;
+    }
+
+    .mobile-lead .mobile-photo2 {
+        height: 250px;
+        position: relative;
+        top: 50px;
+        margin-bottom: 110px;
+    }
+
+    .mobile-lead .mobile-photo3 {
+        height: 250px;
+        position: relative;
+        top: 50px;
+        margin-bottom: 130px;
+    }
+
+    footer h2 {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    footer li {
+        text-align: center;
+         font-size: 17px;
+    }
+
+    .back_top {
+        position: relative;
+        right: -80px;
+        top: 220px;
+    }
+
+}
+
+
