@@ -945,12 +945,14 @@ footer i {
         background-position: top;
         padding-top: 100px;
         padding-bottom: 1px;
+        overflow: hidden;
     }
 
     .mobile-photogroup {
         width: 70%;
         height: auto;
         margin: auto;
+        /* overflow: hidden; */
     
     }
 
