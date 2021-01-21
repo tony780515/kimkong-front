@@ -1,0 +1,1321 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* navbar開始 */
+
+.hamburger-btn {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    height: 110px;
+    background-image: url(/images/01-index/footerBg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 2;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+nav .button{
+    width: 15%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+nav .logo {
+    width: 180px;
+    height: 180px;
+    background-image: url(/images/01-index/logo.png);
+    background-size: cover;
+    position: relative;
+    transition: 1s;
+    top: 15px;
+    animation: flip 1s forwards 0.3s;
+}
+
+nav .text1 {
+    font-size: 30px;
+    color: rgb(232,193, 53);
+    line-height: 100px;
+    position: relative;
+    top: 0px;
+    left: 10px;
+    transition: 0.3s;
+
+}
+
+nav .text2 {
+    font-size: 30px;
+    color:white;
+    position: relative;
+    line-height: 100px;
+    top: 0px;
+    right: 10px;
+    transition: 0.3s;
+    
+}
+
+.button:hover .text1{
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+.button:hover .text2{
+    position: relative;
+    top: 20px;
+    right: 25px;
+}
+
+.logo:hover {
+    animation: heartBeat; 
+    animation-duration: 0.8s; 
+    
+}
+
+/* scroll效果 */
+.logo.sm {
+    position: relative;
+    top: -50px;
+    transition: 1s;
+}
+
+.space {
+    width: 100%;
+    height: 100px;
+}
+
+/* navbar結束 */
+
+.banner {
+    padding-top: 10px;
+    width: 100%;
+    background-color: black;
+}
+
+.mobile-banner img{
+    display: none;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.news {
+    width: 100%;
+}
+
+.bg1 {
+    width: 100%;
+    height: auto;
+    background-image: url(/images/01-index/最新消息底圖2.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+/* 手機板swiper開始 */
+.mobile-bg {
+    display: none;
+}
+
+.swiper-container a {
+    text-decoration: none;
+}
+
+.mobile-bg {
+    width: 100%;
+    height: 600px;
+    background-image: url(/images/01-index/最新消息底圖2.jpg);
+    background-size: cover;
+    background-position: top;
+  }
+
+.swiper-container {
+    width: 70%;
+    height: 70%;
+    padding:20px 40px 20px 40px;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    background-position: left;
+    background-size: cover;
+    border: 2px solid black;
+    position: relative;
+}
+
+.title-slide {
+    font-size: 28px;
+    color:  rgb(244,173,65);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.swiper-container .title {
+    width: 100%;
+
+}
+
+.text-slide {
+    background-image: url(/images/01-index/最新消息文字底圖.jpg);
+    background-position: right;
+    width: 100%;
+    height: 120px;
+    font-size: 20px;
+    font-weight: bold;
+    /* text-align: justify; */
+    color: black;
+    margin: 0;
+    padding: 4px;
+    position: relative;
+    top: 375px;
+}  
+
+.seemore-slide {
+     padding: 3px 10px;
+     border: 1px gray solid;
+     font-size: 16px;
+     border-top: 1px solid #96d1f8;
+     background: #65a9d7;
+     background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+     background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+     padding: 7px 14px;
+     -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+     border-radius: 6px;
+     -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+     -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+     box-shadow: rgba(0,0,0,1) 0 1px 0;
+     text-shadow: rgba(0,0,0,.4) 0 1px 0;
+     color: white;
+     position: absolute;
+     bottom: -110px;
+     right: 15px;
+}
+
+.date-slide {
+    color: rgb(204, 3, 3);
+    position: absolute;
+    font-size: 15px;
+    bottom: -95px;
+    left: 5px;
+    
+}
+
+.swiper-pagination {
+    position: relative;
+    top: 95px;
+}
+ /* 手機板swiper結束 */  
+
+.cardgroup {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+
+.cardgroup .bigtitle {
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.card {
+    width: 70%;
+    height: 300px;
+    background-image: url(/images/01-index/最新消息文字底圖2.png);
+    background-size: cover;
+    background-position: center;
+    margin:30px auto;
+    padding: 20px;
+    display: flex;
+    position: relative;
+}
+
+.card .photo {
+    width: 35%;
+    height: 100%;
+    background-image: url(/images/01-index/最新消息照片1.jpg);
+    background-size: cover;
+    background-position: left top;
+}
+
+.card .text {
+    padding: 0 0 0 30px;
+    width: 65%;
+    height: 100%;
+}
+
+.card .title {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(247, 172, 59);
+    margin-bottom: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    overflow:hidden;
+    
+}
+
+.card .content {
+    color: wheat;
+    font-size: 18px;
+    line-height: 2;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    overflow:hidden;
+}
+
+.more-buttom {
+     width: 100px;
+     border-top: 1px solid #96d1f8;
+     background: #65a9d7;
+     background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+     background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+     padding: 7px 14px;
+     -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+     border-radius: 6px;
+     -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+     -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+     box-shadow: rgba(0,0,0,1) 0 1px 0;
+     text-shadow: rgba(0,0,0,.4) 0 1px 0;
+     color: white;
+     font-size: 16px;
+     font-family: Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     vertical-align: middle;
+     text-align: center;
+     cursor:pointer;
+     position: absolute;
+     bottom: 20px;
+     
+    
+}
+
+.more-buttom:hover { 
+    border-top-color: #28597a;
+    background: #28597a;
+    color: #ccc;
+ }
+ .more-buttom:active { 
+    border-top-color: #1b435e;
+    background: #1b435e;
+ }
+
+.card .date {
+    font-size: 15px;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    
+}
+
+.mobile-lead {
+    display: none;
+}
+
+.lead {
+    width: 100%;
+    height: auto;
+}
+
+.lead .bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/01-index/首頁特效底圖3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 400px;
+}
+
+.lead .title {
+    font-size: 55px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.photogroup {
+    width: 65%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+}
+
+.photo1 {
+    border: 2px solid  rgb(0, 0, 0);
+    width: 33.3%;
+    height: 500px;
+    background-image:url(/images/01-index/photo1.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: skew(-5.5deg);
+    transition: 0.3s;
+}
+
+.phototext {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+
+.photo2 {
+    border: 2px solid  rgb(0, 0, 0);
+    width: 33.3%;
+    height:  500px;
+    background-image:url(/images/01-index/photo2.jpg);
+    background-size: cover;
+    background-position:  right 35% bottom 45%;;
+    background-repeat: no-repeat;
+    transform: skew(-5.5deg);
+    transition: 0.2s;
+}
+
+.photo3 {
+    border: 2px solid  rgb(0, 0, 0);
+    width: 33.3%;
+    height:  500px;
+    background-image:url(/images/01-index/photo3.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: skew(-5.5deg);
+    transition: 0.3s;
+}
+
+.lead .photohover:hover {
+    z-index: 1;
+    border: 5px solid  rgb(232,193, 53);
+    transform: scale(1.1) skew(-5.5deg);
+}
+
+.lead .photohover:hover .phototext{
+    display: block;
+}
+
+/* footer開始 */
+footer {
+    width: 100%;
+    height: 220px;
+    color: rgb(190, 190, 190);
+    overflow: hidden;
+}
+
+footer .bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/01-index/footerBg.png);
+    background-size: cover;
+    background-position: bottom;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutus {
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+}
+
+.contactus {
+    width: 33.3%;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+    
+}
+
+footer li{
+    line-height: 2;
+}
+
+footer h2 {
+    margin: 0;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+}
+
+.footerlogo {
+    margin-top: 15px;
+    width: 33.3%;
+    text-align: center;
+}
+
+.footerlogo .photo{
+    width: 120px;
+    height: 120px;
+    background-image: url(/images/01-index/footerlogo.png);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.footerlogo .photo:hover {
+    background-image: url(/images/01-index/logo2.png);
+}
+
+footer .texthover:hover {
+    color: rgb(232,193, 53);
+}
+
+footer i {
+    margin: 5px 5px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.fa-facebook-square:hover {
+    color: rgb(80, 117, 191);
+}
+
+.fa-line:hover {
+    color: rgb(1, 191, 5);
+}
+
+.fa-youtube-square:hover {
+    color: rgb(254, 1, 0);
+}
+
+.fa-instagram:hover {
+    color: rgb(194, 50, 159);
+}
+
+.contactus {
+    display: flex;
+    justify-content: center; 
+}
+
+.back_top {
+    position: relative;
+    right: -100px;
+    top: 50px;
+}
+
+.back_top .photo {
+    position: relative;
+    top: 0;
+    transition: 0.5s;
+}
+
+.back_top .text {
+    color: white;
+}
+
+.back_top:hover  .photo{
+    position: relative;
+    top: -15px;
+}
+
+/* footer結束 */
+
+/* 以下開始RWD縮版 */
+@media (max-width:1300px) {
+    
+
+    nav .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav .text1, nav .text2 {
+        font-size: 22px;
+    }
+
+    .logo.sm {
+        position: relative;
+        top: -20px;
+        transition: 1s;
+    }
+
+    .cardgroup .bigtitle {
+        font-size: 35px;
+        padding-top: 20px;
+    
+    }
+
+    .card {
+        width: 80%;
+        height: 250px;
+    }
+
+    .card .title {
+        font-size: 25px;
+    }
+
+    .card .content {
+        font-size: 15px;
+    }
+
+    .card .date {
+        font-size: 12px;
+    }
+
+    .lead .bg {
+        background-image: url(/images/01-index/首頁特效底圖3.jpg);
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 195px;
+    }
+
+    .back_top {
+        position: relative;
+        right: -30px;
+    }
+}
+
+@media (max-width:1080px) {
+    nav {
+        width: 100%;
+        height: 90px;
+    }
+
+    nav .logo {
+        width: 130px;
+        height: 130px;
+        top: 15px;
+    }
+
+    nav .photo {
+        height: 100%;
+    }
+
+    nav img {
+        height: 100%;
+    }
+
+    nav .text1 {
+        font-size: 20px;
+        line-height: 80px;
+        position: relative;
+        top: 0px;
+        left: 10px;
+        transition: 0.3s;
+    }
+
+    nav .text2 {
+        font-size: 20px;
+        color:white;
+        position: relative;
+        line-height: 80px;
+        top: 0px;
+        right: 10px;
+        transition: 0.3s;  
+    }
+
+    .space {
+        width: 100%;
+        height: 90px;
+    }
+
+    .banner {
+        padding-top: 0px;
+    }
+
+    .button:hover .text1{
+        position: relative;
+        top: -20px;
+        left: 16px;
+    }
+    
+    .button:hover .text2{
+        position: relative;
+        top: 20px;
+        right: 25px;
+    }
+
+
+    .cardgroup .bigtitle {
+        font-size: 40px;
+        padding-top: 30px;
+    
+    }
+
+    .card {
+        width: 90%;
+        height: 220px;
+    }
+
+    .card .photo {
+        width: 25%;
+    }
+
+    .card .text {
+        width: 75%;
+
+    }
+
+    .lead .title {
+        font-size: 40px;
+    }
+
+    .card .content {
+        -webkit-line-clamp: 3;
+    }
+
+    .phototext {
+        font-size: 25px;   
+    }
+
+    .photo1, .photo2, .photo3{
+        height:  400px;
+    }
+}
+
+@media (max-width:960px) {
+    nav .button{
+        width: 20%;
+    }
+
+    nav {
+        width: 100%;
+        height: 80px;
+    }
+
+    nav .logo {
+        width: 110px;
+        height: 110px;
+        top: 5px;
+    }
+
+    nav .text1 {
+        font-size: 18px;
+        line-height: 70px;
+    }
+
+    nav .text2 {
+        font-size: 18px;
+        line-height: 70px;
+    }
+
+    .space {
+        width: 100%;
+        height: 80px;
+    }
+
+    .cardgroup .bigtitle {
+        font-size: 40px;
+        padding-top: 20px;
+    }
+
+    .card {
+        width: 90%;
+        height: 150px;
+        margin:20px auto;
+        padding: 10px;
+    }
+
+    .card .photo {
+        width: 30%;
+    }
+
+    .card .text {
+        padding: 0 0 0 10px;
+        width: 70%;
+        height: 100%;
+    }
+
+    .card .title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .card .content {
+        font-size: 15px;
+        line-height: 1.5;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+        overflow:hidden;
+    }
+
+    .more-buttom {
+        width: 80px;
+        padding: 3px 8px;
+        font-size: 15px;
+        bottom: 12px;
+    }
+
+    .card .date {
+        font-size: 12px;
+        position: absolute;
+        bottom: 5px;
+    }
+
+    .lead .title {
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .photogroup {
+        width: 65%;
+        margin-top: 30px;
+    }
+
+    .photo1,.photo2,.photo3 {
+        height: 300px;
+    }
+
+    .phototext {
+        font-size: 20px;
+    }
+
+    footer {
+        height: 200px; 
+    }
+
+    .footerlogo .photo{
+        width: 100px;
+        height: 100px;
+    }
+
+    footer i {
+        margin: 3px 3px;
+        font-size: 25px;
+    }
+
+    .back_top {
+        position: relative;
+        right: -20px;
+        top: 15px;
+    
+    }
+}
+
+@media (max-width:720px) {
+
+    nav .button {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: block;
+        /* cursor: pointer; */
+    }
+
+    .connect i{
+        font-size: 30px;
+        color: rgb(232,193, 53);
+        /* margin: 5px; */
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+
+    .connect ul{
+        /* display: none; */
+        width: 170px;
+        background-image: url(/images/01-index/footerBg.png);
+        background-size: cover;
+        line-height: 2.5;
+        list-style: none;
+        text-decoration: none;
+        z-index: 1;
+        position: absolute;
+        top: 64px;
+        left: -200px;
+        transition: 0.5s;
+    }
+
+    .connect a {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left:20px;
+    }
+
+    .connect:hover ul{
+        display: block;
+        top: 64px;
+        left: -35px;
+    }
+
+    .connect li:hover a {
+        color: rgb(232,193, 53);
+    }
+
+    nav {
+        display: initial;
+        
+    }
+
+    nav .logo{
+        width: 110px;
+        height: 110px;
+        top: 5px;
+        margin: auto;
+    }
+
+    .logo.sm {
+        position: relative;
+        top: -27px;
+        transition: 1s;
+    }
+
+    .banner img {
+        display: none;
+    }
+
+    .mobile-banner img {
+        display: block;
+        width: 100%;
+    }
+
+    .cardgroup {
+        display: none;
+    }
+
+    .bg1 {
+        display: none;
+    }
+
+    .mobile-bg {
+        display: block;
+    }
+    
+    .lead {
+        display: none;
+    }
+
+    .mobile-lead {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .mobile-lead .bg {
+        width: 100%;
+        height: auto;
+        background-image: url(/images/01-index/手機板台柱底圖-12.jpg);
+        background-size: cover;
+        background-position: top;
+        padding-top: 100px;
+        padding-bottom: 1px;
+    }
+
+    .mobile-photogroup {
+        width: 70%;
+        height: auto;
+        margin: auto;
+    
+    }
+
+    .mobile-lead img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        /* right: -1px; */
+        /* top: -68px; */
+        transform: translate(0%, 0%) scale(1.2);
+        animation: move 5s linear infinite;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translate(0%, 0%) scale(1.2) rotate(0deg);
+
+        }
+
+        100% {
+            transform: translate(0%, 0%) scale(1.2) rotate(-360deg);
+
+        }
+    }
+
+    /* @keyframes move{
+        from{
+            transform: rotate(0deg);
+        }
+
+        to{
+            transform: rotate(-360deg);
+        }
+    } */
+
+    .mobile-lead .mobile-photo1 {
+        width: 100%;
+        height: 450px;
+        background-image: url(/images/01-index/史艷文手機板-14.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        position: relative;
+        top: 100px;
+        margin-bottom: 160px;
+    }
+
+    .mobile-lead .mobile-photo2 {
+        width: 100%;
+        height: 450px;
+        background-image: url(/images/01-index/史驚武手機板-13.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        position: relative;
+        top: 50px;
+        margin-bottom: 110px;
+    }
+
+    .mobile-lead .mobile-photo3 {
+        width: 100%;
+        height: 450px;
+        background-image: url(/images/01-index/黑白郎君手機板-12.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        position: relative;
+        top: 50px;
+        margin-bottom: 130px;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+    }
+
+    footer .bg {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    footer .aboutus, .contactus{
+         width: 50%;
+    }
+
+    .footerlogo {
+        width: 100%;
+    }
+
+    footer h2 {
+         font-size: 30px;
+         margin-bottom: 20px;
+    }
+
+    footer li {
+         font-size: 20px;
+    }
+
+    .footerlogo {
+        margin-top: 15px;
+        text-align: center;
+        order: 1;
+    }
+
+    .back_top {
+        position: relative;
+        right: -40px;
+        top: 260px;
+    }
+   
+}
+
+@media (max-width:540px) {
+    
+    .swiper-container {
+        width: 90%;
+        height: 70%;
+        padding:20px 40px 20px 40px;
+    }
+    
+    .swiper-slide {
+        width: 100%;
+        height: 100%;
+        background-position: left;
+        background-size: cover;
+        border: 2px solid black;
+        position: relative;
+    }
+    
+    .mobile-lead .mobile-photo1 {
+        height: 360px;
+        position: relative;
+        top: 100px;
+        margin-bottom: 160px;
+    }
+
+    .mobile-lead .mobile-photo2 {
+        height: 360px;
+        position: relative;
+        top: 50px;
+        margin-bottom: 110px;
+    }
+
+    .mobile-lead .mobile-photo3 {
+        height: 360px;
+        position: relative;
+        top: 50px;
+        margin-bottom: 130px;
+    }
+
+    footer h2 {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    footer li {
+        text-align: center;
+         font-size: 17px;
+    }
+    
+    .back_top {
+        position: relative;
+        right: 30px;
+        top: 210px;
+    }
+}
+
+@media (max-width:410px) {
+    .connect ul{
+        /* display: none; */
+        width: 160px;
+        background-image: url(/images/01-index/footerBg.png);
+        background-size: cover;
+        line-height: 2.5;
+        list-style: none;
+        text-decoration: none;
+        z-index: 1;
+        position: absolute;
+        top: 64px;
+        left: -200px;
+        transition: 0.5s;
+    }
+
+    .swiper-container {
+        width: 90%;
+        height: 60%;
+        padding:20px 40px 20px 40px;
+    }
+    
+    .mobile-bg {
+        width: 100%;
+        height: 500px;
+        background-image: url(/images/01-index/最新消息底圖2.jpg);
+        background-size: cover;
+        background-position: top;
+    }
+
+    .title-slide {
+        font-size: 25px;
+    }
+    
+    .seemore-slide {
+         padding: 3px 5px;
+         font-size: 14px;
+    }
+    
+    .date-slide {
+        color: rgb(204, 3, 3);
+        position: absolute;
+        font-size: 13px;
+        bottom: -110px;
+        left: 5px;
+        
+    }
+
+    .text-slide {
+        background-image: url(/images/01-index/最新消息文字底圖.jpg);
+        background-position: right;
+        width: 100%;
+        height: 120px;
+        font-size: 20px;
+        font-weight: bold;
+        /* text-align: justify; */
+        color: black;
+        margin: 0;
+        padding: 4px;
+        position: relative;
+        top: 255px;
+    }  
+
+    .mobile-lead .mobile-photo1 {
+        height: 300px;
+        position: relative;
+        top: 100px;
+        margin-bottom: 160px;
+    }
+
+    .mobile-lead .mobile-photo2 {
+        height: 300px;
+        position: relative;
+        top: 50px;
+        margin-bottom: 110px;
+    }
+
+    .mobile-lead .mobile-photo3 {
+        height: 300px;
+        position: relative;
+        top: 50px;
+        margin-bottom: 130px;
+    }
+
+
+    footer .aboutus, .contactus{
+         width: 100%;
+    }
+
+    footer .contactus {
+        position: relative;
+        left: 10px;
+    }
+
+    .footerlogo {
+        width: 100%;
+    }
+
+    footer li {
+        text-align: center;
+         font-size: 20px;
+    }
+
+    .footerlogo {
+        width: 80%;
+        margin-top: 15px;
+        text-align: center;
+        order: 1;
+    }
+
+    footer h2 {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    footer li {
+        text-align: center;
+         font-size: 17px;
+    }
+
+    .back_top {
+        position: relative;
+        right: -80px;
+        top: 220px;
+    }
+
+}
+
+@media (max-width:360px) {
+    .swiper-container {
+        width: 90%;
+        height: 50%;
+        padding:20px 40px 20px 40px;
+    }
+    
+    .mobile-bg {
+        width: 100%;
+        height: 420px;
+        background-image: url(/images/01-index/最新消息底圖2.jpg);
+        background-size: cover;
+        background-position: top;
+      }
+
+    .text-slide {
+        background-image: url(/images/01-index/最新消息文字底圖.jpg);
+        background-position: right;
+        width: 100%;
+        height: 120px;
+        font-size: 15px;
+        font-weight: bold;
+        /* text-align: justify; */
+        color: black;
+        margin: 0;
+        padding: 4px;
+        position: relative;
+        top: 180px;
+    }  
+
+    .mobile-lead .mobile-photo1 {
+        height: 250px;
+        position: relative;
+        top: 100px;
+        margin-bottom: 160px;
+    }
+
+    .mobile-lead .mobile-photo2 {
+        height: 250px;
+        position: relative;
+        top: 50px;
+        margin-bottom: 110px;
+    }
+
+    .mobile-lead .mobile-photo3 {
+        height: 250px;
+        position: relative;
+        top: 50px;
+        margin-bottom: 130px;
+    }
+
+    footer h2 {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    footer li {
+        text-align: center;
+         font-size: 17px;
+    }
+
+    .back_top {
+        position: relative;
+        right: -80px;
+        top: 220px;
+    }
+
+}
+
+
