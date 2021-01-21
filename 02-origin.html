@@ -7,9 +7,62 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="/css/02-origin/02-origin.css">
+
+    <!-- template用 -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    
+    <link rel="stylesheet" href="/css/01-index/index.css">
+    
 </head>
 
 <body>
+
+     <!-- navbar 開始 -->
+     <nav>
+        <div class="hamburger-btn">
+            <div class="connect">
+                <i class="fas fa-bars"></i>
+                <ul>
+                    <li><a href="https://www.facebook.com/6owldoor/" target="_blank">金光起源</a></li>
+                    <li><a href="#lead-mobile-btn">金光台柱</a></li>
+                    <li><a href="https://www.facebook.com/6owldoor/" target="_blank">金光戰役</a></li>
+                    <li><a href="https://www.facebook.com/6owldoor/" target="_blank">金光粉絲</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="/goldenlight/origin"  class="button">
+            <div class="text1">金光</div>
+            <div class="photo"><img src="/images/01-index/天劍.png" alt=""></div>
+            <div class="text2">起源</div>
+        </a>
+        <a href="#lead_button"  class="button">
+            <div class="text1">金光</div>
+            <div class="photo"><img src="/images/01-index/天劍.png" alt=""></div>
+            <div class="text2">台柱</div>
+        </a>
+
+        <a href="/goldenlight"><div class="logo"></div></a>
+
+        <a href="/goldenlight/battle"  class="button">
+            <div class="text1">金光</div>
+            <div class="photo"><img src="/images/01-index/天劍.png" alt=""></div>
+            <div class="text2">戰役</div>
+        </a>
+        <a href=""  class="button">
+            <div class="text1">金光</div>
+            <div class="photo"><img src="/images/01-index/天劍.png" alt=""></div>
+            <div class="text2">粉絲</div>
+        </a>
+    </nav>
+    <!-- navbar 結束 -->
 
     <div class="container">
         <div class="founder">
@@ -68,6 +121,93 @@
             </div>
         </div>
     </div>
+    <!-- footer開始 -->
+    <footer>
+        <div class="bg">
+            <div class="aboutus">
+                <ul>
+                    <li>
+                        <h2>關於金光</h2>
+                    </li>
+                    <a href="https://mops.twse.com.tw/mops/web/t05st03?step=1&firstin=true&co_id=8450" target="_blank">
+                        <li class="texthover">投資人資訊</li>
+                    </a>
+                    <a href="https://www.104.com.tw/company/18l2zs14" target="_blank">
+                        <li class="texthover">金光徵才</li>
+                    </a>
+                    <a href="https://m.pili.com.tw/investor.php?id=7&lang=" target="_blank">
+                        <li class="texthover">CSR社會責任
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footerlogo">
+                <div class="photo"></div>
+                <div class="copy">Copyright©2021金光布袋戲</div>
+            </div>
+            <div class="contactus">
+                <ul>
+                    <li>
+                        <h2>聯絡金光</h2>
+                    </li>
+                    <a href="https://m.pili.com.tw/contact.php" target="_blank">
+                        <li class="texthover" >聯絡我們</li>
+                    </a>
+                    <a href="https://m.pili.com.tw/retail-store.php"  target="_blank">
+                        <li class="texthover">直營精品
+                        </li>
+                    </a>
+                    <li><a href="https://www.facebook.com/1kimkong/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <span><a href="https://www.youtube.com/channel/UCC5lW-QWw-qHeuO_y-nd2Zg" target="_blank"><i class="fab fa-youtube-square"></i></a></span>
+                        <span><a href="https://line.me/ti/p/%40ysa2514f" target="_blank"><i class="fab fa-line"></i></a></span>
+                        <span><a href="https://www.instagram.com/111kimkong/" target="_blank"><i class="fab fa-instagram"></i></a></span>
+                    </li>
+                </ul>
+                <a href="#top"><div class="back_top">
+                    <div class="photo"><img src="/images/01-index/goTopArrow.png" alt=""></div>
+                    <div class="text">top</div>
+                </div></a>
+            </div>
+        </div>
+    </footer>
+<!-- footer結束 -->    
+
+<!-- template用 -->
+<!-- js開始 -->
+<script>
+    var navbar = document.querySelector(".logo")
+
+    window.onscroll = function() {
+        if(document.documentElement.scrollTop > 80 || document.body.scrollTop > 80) {
+            navbar.classList.add("sm")
+        } else {
+            navbar.classList.remove("sm")
+        }
+    } 
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'flip',
+        grabCursor: true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
+    });
+</script>
+<!-- js結束 -->
+
+
 
 </body>
 
