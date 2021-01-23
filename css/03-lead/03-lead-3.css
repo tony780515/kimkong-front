@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    width: 100%;
+    height: auto;
+    background-image: url(/images/03-lead/南宮恨bg-13.jpg);
+    background-size: cover;
+    background-position: top;
+    padding-top: 9.8%;
+    padding-bottom: 13%;
+    
+}
+
+.lead-photo-area {
+    /* background-color: aqua; */
+    width: 83%;
+    height: 450px;
+    margin: auto;
+    /* position: relative;
+    top: 150px;
+    left: 62px; */
+    display: flex;
+}
+
+.lead-name {
+    width: 48%;
+    padding-top: 30px;
+}
+
+.slogan {
+    width: 4%;
+    padding-top: 2%;
+    writing-mode: vertical-rl;
+    font-family: DFKai-sb;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.lead-photo {
+    width: 48%; 
+}
+
+.lead-name img{
+    width: 23%;
+    /* height: 100%; */
+    margin-left:40%;
+}
+
+.lead-photo img {
+    height:100%;
+}
+
+.laed-content-area {
+    width: 83%;
+    margin: auto;
+    margin-top: 1.5%;
+    padding-top: 2%;
+}
+
+.laed-content-area .title {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: DFKai-sb;
+    text-align: center;
+}
+
+.laed-content-area {
+    width: 83%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: DFKai-sb;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.content {
+    width: 800px;
+    margin: auto;
+    /* position: relative;
+    left: 20%; */
+}
+
+.video-area {
+    padding-top: 15%;
+    width: 83%;
+    margin: auto;
+}
+
+.youtube {
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
