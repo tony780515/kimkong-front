@@ -43,13 +43,17 @@ body {
     font-weight: bold;
 }
 
+/* 把RWD-900px的slogan隱藏 */
+.slogan-900px {
+    display: none;
+}
+
 .lead-photo {
     width: 48%; 
 }
 
 .lead-name img{
     width: 25%;
-    /* height: 100%; */
     margin-left:40%;
 }
 
@@ -62,6 +66,8 @@ body {
     margin: auto;
     margin-top: 1.5%;
     padding-top: 2%;
+    display: flex;
+    flex-direction: column;
 }
 
 .laed-content-area .title {
@@ -71,20 +77,12 @@ body {
     text-align: center;
 }
 
-.laed-content-area {
-    width: 83%;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: DFKai-sb;
-    display: flex;
-    flex-direction: column;
-    
-    
-}
-
 .content {
     width: 800px;
     margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: DFKai-sb;
     /* position: relative;
     left: 20%; */
 }
@@ -102,3 +100,91 @@ body {
    align-items: center;
 
 }
+
+.video-area .view {
+    width: 900px;
+    height: 700px;
+}
+
+@media (max-width:1200px) {
+    .bg {
+        padding-top: 10%;
+        padding-bottom: 25%;
+    }
+
+    .lead-name {
+        width: 48%;
+        padding-top: 20px;
+    }
+
+    .slogan {
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 1%;
+    }
+
+    .laed-content-area .title {
+        font-size: 30px;
+    }
+
+    .laed-content-area p {
+        margin: 10px;
+    }
+
+    .laed-content-area {
+        margin-top: 0.5%;
+        padding-top: 1%;
+    }
+
+    .content {
+        width: 660px;
+        font-size: 20px;
+    }
+
+    .video-area .view {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media (max-width:900px) {
+    .lead-name img{
+        width: 30%;
+        /* height: 100%; */
+        margin-left:32%;
+    }
+
+    .slogan {
+         display: none;
+    }
+
+    .slogan-900px {
+        display: block;
+        width: 4%;
+        padding-top: 4%;
+        writing-mode: vertical-rl;
+        font-family: DFKai-sb;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .laed-content-area {
+        margin-top: 5%;
+        padding-top: 1%;
+    }
+
+    .laed-content-area .title {
+        font-size: 25px;
+    }
+
+    .content {
+        width: 660px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:830px) {
+    
+}
+
+
