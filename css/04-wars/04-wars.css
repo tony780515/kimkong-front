@@ -11,13 +11,16 @@ main{
     height:auto;
     background-color: #141A16;
 }
-
+.banner_360{
+    display: none;
+}
 .contain_360{
     display: none;
 }
 .top{
     width: 100%;
     height: auto;
+    padding-top: 100px;
 }
 .top img{
     width: 100%;
@@ -147,11 +150,19 @@ main .contain a img:hover{
 }
 
 @media screen and (max-width:720px){
-
     .top{
-        width: 100%;
-    background-color: rgb(163, 60, 60);
+        display: none;
     }
+
+    .banner_360{
+        display: block;
+        width: 100%;
+        padding-top: 100px;
+    }
+    .banner_360 img{
+        width: 100%;
+    }
+    
     
     .contain{
         display: none;
