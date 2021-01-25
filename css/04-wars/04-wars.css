@@ -11,6 +11,10 @@ main{
     height:auto;
     background-color: #141A16;
 }
+
+.contain_360{
+    display: none;
+}
 .top{
 
     width: 100%;
@@ -138,4 +142,124 @@ a img:hover{
     margin-left: 300px;
     line-height: 1.5;
     letter-spacing: 2px;
+}
+
+
+@media screen and (max-width:360px){
+
+    .top{
+    background-color: rgb(163, 60, 60);
+    }
+
+    .contain{
+        display: none;
+    }
+    .contain_360{
+        display:unset;
+        height: calc(100% - 350px);
+        background-image: url("war/360/P2-手機板-介面背景.png");
+        background-color: #141A16;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 30px;
+    }
+
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper-container {
+        width: 100%;
+        margin-left: 0;
+        padding: 30px;
+        display: flex;
+        
+    } 
+
+    .swiper-slide {
+        text-align: left;
+        font-size: 18px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .card{
+        background-color: #534741;
+        width: 60%;
+    }
+
+    .btn{
+        background: unset;
+        float: right;
+    }
+
+    .fas {
+        font-size: 20px;
+        color: rgb(245, 241, 235);
+
+
+    }
+    .card-title img{
+        width: 100%;
+    }
+    .card-text{
+        color: rgb(245, 241, 235);
+        font-size: small;
+    }
+
+    .ellipsis {
+        font-size: 14px;
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .modal-content{
+        background-color:unset
+    }
+    .modal-header{
+        position: relative;
+    }
+    .close{
+
+        background-color: white;
+        border-radius: 20%;
+        position: absolute;right: 5%;
+    }
+    .modal-body{
+
+        background-size:cover;
+        background-position:center ;
+        padding: 20px 10px
+    }
+    .modal-body img {
+        width: 100%; 
+        margin-bottom: 10px;
+
+    }
+  
+
+
+
 }
