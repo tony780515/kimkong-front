@@ -149,6 +149,77 @@ main .contain a img:hover{
     letter-spacing: 2px;
 }
 
+@media screen and (max-width:1800px){
+
+    .contain .swiper{
+        width: 80%;
+        height: 50%;
+        margin-top:3% ;
+        display: flex;
+         
+    
+       
+    }    
+    .contain .content_text{
+        width: 60%;
+        color:rgb(255, 253, 246);
+        margin-left: 300px;
+        line-height: 1.5;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width:1700px){
+
+    .contain .swiper{
+        width: 80%;
+        height:45%;
+        margin-top:3% ;
+        display: flex;
+       
+    }
+    
+    .contain .swiper-slide {
+        background-position: bottom;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+       
+    }
+
+}
+@media screen and (max-width:1600px){
+
+    .contain .swiper{
+        width: 80%;
+        height:45%;
+        margin-top:3% ;
+        display: flex;
+       
+    }
+    
+    .contain .swiper-slide {
+        background-position: bottom;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+       
+    }
+
+    .contain .content_text{
+        width: 60%;
+        color:rgb(255, 253, 246);
+        margin-left: 230px;
+        line-height: 1.5;
+        letter-spacing: 2px;
+    }
+
+}
+
+
+
 @media screen and (max-width:720px){
     .top{
         display: none;
@@ -171,7 +242,7 @@ main .contain a img:hover{
         display:block;
         width: 100%;
         /* height: calc(100% - 350px); */
-        background-image: url('/images/04-wars/P2_360_background.png');
+        background-image: url('/images/04-wars/P2_360_new_2.png');
         background-color: #141A16;
         background-size: cover;
         background-repeat: no-repeat;
