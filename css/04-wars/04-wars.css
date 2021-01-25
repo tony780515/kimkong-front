@@ -16,10 +16,11 @@ main{
     display: none;
 }
 .top{
-
     width: 100%;
-    height: 150px;
-    
+    height: 500px;
+}
+.top img{
+    height: 100%;
 }
 .contain{
     width: 100%;
@@ -29,7 +30,7 @@ main{
     display: flex;
     padding-bottom: 40px;
 }
-video {
+.contain video {
     width: 100vw;
     mix-blend-mode: screen;
     position: fixed;
@@ -38,53 +39,53 @@ video {
     right: 0;
     pointer-events: none;
 }
-.list{
+.contain .list{
     width:20%;
     background-image: url("/images/04-wars/P3-left-bg.png");
     background-size:cover;
     background-repeat: no-repeat;
 
 }
-.nav-pills{
+.contain .nav-pills{
     margin-top: 470px;
     margin-left: 20px;
     list-style: none;
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.contain .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   
     background-color: unset;
 }
-.nav-link img{
+.contain .nav-link img{
     width: 300px;
     padding-bottom:20px ;
     
 }
 
-a img:hover{
+main .contain a img:hover{
     transform: translate(10px) rotate(5deg);
     
 }
-.content_wars{
+.contain .content_wars{
     display: unset;
     width: 80%;
     height: 100%;
     margin-top: 30px;
 }
-.main_title{
+.contain .main_title{
     width: 100%;
 }
-.main_title_img{
+.contain .main_title_img{
     display: flex;
     justify-content: center;
   
 }
 
-.main_title img{
+.contain .main_title img{
     height: 70%;
     width: 50%;    
 }
 
-.content_bottom{
+.contain .content_bottom{
     width: 100%;
     height:1100px;
 
@@ -95,18 +96,18 @@ a img:hover{
 
 }
 
-.subtitle{
+.contain .subtitle{
     width: 100%;
     height: 150px;
     position: relative;
 }
-.subtitle img{
+.contain .subtitle img{
     width: 55%;
     position: absolute;
     right: 10%;
     bottom: -65%;
 }
-.swiper{
+.contain .swiper{
     width: 80%;
     height: 580px;
     margin-top:3% ;
@@ -116,7 +117,7 @@ a img:hover{
    
 }
 
-.swiper-container {
+.contain .swiper-container {
     width: 100%;
     height: 100%;
     padding-top: 50px;
@@ -126,7 +127,7 @@ a img:hover{
     
 }
 
-.swiper-slide {
+.contain .swiper-slide {
     background-position: bottom;
     background-size: cover;
     width: 800px;
@@ -136,7 +137,7 @@ a img:hover{
 
 }
 
-.content_text{
+.contain .content_text{
     width: 60%;
     color:rgb(255, 253, 246);
     margin-left: 300px;
@@ -148,18 +149,20 @@ a img:hover{
 @media screen and (max-width:360px){
 
     .top{
+        width: 100%;
     background-color: rgb(163, 60, 60);
     }
-
+    
     .contain{
         display: none;
     }
-    .contain_360{
-        display:unset;
-        height: calc(100% - 350px);
-        background-image: url("war/360/P2-手機板-介面背景.png");
+    main .contain_360{
+        display:block;
+        width: 100%;
+        /* height: calc(100% - 350px); */
+        background-image: url('/images/04-wars/P2_360_background.png');
         background-color: #141A16;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         padding-top: 30px;
     }
@@ -167,24 +170,27 @@ a img:hover{
     body {
         position: relative;
         height: 100%;
-    }
-
-    body {
         background: #eee;
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 14px;
-        color: #000;
         margin: 0;
         padding: 0;
     }
 
     .swiper-container {
         width: 100%;
+        margin-top:20%;
         margin-left: 0;
         padding: 30px;
         display: flex;
         
     } 
+    .swiper-button-next{
+       color: rgb(90, 22, 10);
+    }
+    .swiper-button-prev{
+        color: rgb(90, 22, 10);
+    }
 
     .swiper-slide {
         text-align: left;
@@ -215,7 +221,7 @@ a img:hover{
     }
 
     .fas {
-        font-size: 20px;
+        font-size: 15px;
         color: rgb(245, 241, 235);
 
 
@@ -245,18 +251,27 @@ a img:hover{
 
         background-color: white;
         border-radius: 20%;
-        position: absolute;right: 5%;
+        position: absolute;
+        right: 5%;
     }
-    .modal-body{
+    .modal-dialog-scrollable{
+        display: unset;
+    }
+    .modal-body{ 
+        background-image: url('/images/04-wars/bg_360.png');
 
         background-size:cover;
         background-position:center ;
-        padding: 20px 10px
-    }
+        padding: 20px 10px;
+    } 
     .modal-body img {
         width: 100%; 
         margin-bottom: 10px;
 
+    }
+
+    .modal-header img{
+        width: 100%;
     }
   
 
