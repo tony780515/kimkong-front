@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-all {
+    display: none;
+}
+
+.bg {
+    width: 100%;
+    height: auto;
+    background-image: url(/images/03-lead/史驚武bg-13.jpg);
+    background-size: cover;
+    background-position: top;
+    padding-top: 9.8%;
+    padding-bottom: 13%;
+    
+}
+
+.lead-photo-area {
+    /* background-color: aqua; */
+    width: 83%;
+    /* height: 400px; */
+    margin: auto;
+    /* position: relative;
+    top: 150px;
+    left: 62px; */
+    display: flex;
+}
+
+.lead-name {
+    width: 48%;
+    padding-top: 40px;
+}
+
+.slogan {
+    width: 4%;
+    height: 45%;
+    padding-top: 2%;
+    writing-mode: vertical-rl;
+    font-family: DFKai-sb;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* 把RWD-900px的slogan隱藏 */
+.slogan-900px {
+    display: none;
+}
+
+.lead-photo {
+    width: 48%; 
+}
+
+.lead-name img{
+    width: 25%;
+    margin-left:40%;
+}
+
+.lead-photo img {
+    height:100%;
+}
+
+.laed-content-area {
+    width: 83%;
+    margin: auto;
+    margin-top: 1.5%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.laed-content-area .title {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: DFKai-sb;
+    text-align: center;
+}
+
+.content {
+    width: 800px;
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: DFKai-sb;
+    /* position: relative;
+    left: 20%; */
+}
+
+.video-area {
+    padding-top: 15%;
+    width: 83%;
+    margin: auto;
+}
+
+.youtube {
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.video-area .view {
+    width: 900px;
+    height: 700px;
+}
+
+@media (max-width:1200px) {
+    .bg {
+        padding-top: 10%;
+        padding-bottom: 25%;
+    }
+
+    .lead-name img{
+        width: 22%;
+        margin-left:40%;
+    }
+
+    .slogan {
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 5%;
+    }
+
+    .laed-content-area .title {
+        font-size: 30px;
+    }
+
+    .laed-content-area p {
+        margin: 10px;
+    }
+
+    .laed-content-area {
+        margin-top: 0%;
+        padding-top: 3%;
+    }
+
+    .content {
+        width: 660px;
+        font-size: 20px;
+    }
+
+    .video-area .view {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media (max-width:900px) {
+    .lead-name img{
+        width: 25%;
+        /* height: 100%; */
+        margin-left:32%;
+    }
+
+    .slogan {
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 9%;
+    }
+
+    .laed-content-area {
+        margin-top: 0%;
+        padding-top: 1%;
+    }
+
+    .laed-content-area .title {
+        font-size: 25px;
+    }
+
+    .content {
+        width: 660px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:720px) {
+    .bg {
+        display: none;
+    }
+
+    .mobile-all {
+        display: block;
+    }
+
+
+    .mobile-all {
+        width: 100%;
+    }
+
+    .mobile-banner {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile-banner img {
+        width: 100%;
+        border-bottom: 5px solid rgb(199, 168, 108);
+
+    }
+
+    .mobile-bigwords img {
+        width: 100%;
+        margin-top: -4px;
+    }
+
+    .mobile-text {
+        width: 100%;
+        padding: 0 20px 0 15px;
+        margin: auto;
+        font-family: DFKai-sb;
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        border-bottom: 5px solid rgb(199, 168, 108);
+    }
+
+    .mobile-text p {
+        margin: 20px 0 ;
+    }
+
+    .mobile-text .text-key {
+        width: 20%;
+        text-align: center;
+    }
+
+    .mobile-text .text-value {
+        width: 80%;
+        text-align: justify;
+    }
+
+    .mobile-youtube .youtube-bg {
+        width: 100%;
+        background-image: url(/images/03-lead/youtube-bg手機板-15.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 50px;
+    }
+
+    .mobile-youtube .youtube {
+        width: 100%;
+    }
+
+    .mobile-youtube .view {
+            width: 500px;
+            height: 400px;
+    }
+}
+
+@media (max-width:540px) {
+
+    .mobile-text {
+        padding: 0 20px 0 10px;
+        font-size: 15px;
+    }
+
+    .mobile-text .text-key {
+        width: 20%;
+    }
+
+    .mobile-text .text-value {
+        width: 80%;
+    }
+
+    .mobile-youtube .view {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (max-width:410px) {
+    .mobile-text {
+        padding: 0 5px 0 0;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .mobile-youtube .view {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+
