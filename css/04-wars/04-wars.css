@@ -24,7 +24,7 @@ main{
 }
 .top img{
     width: 100%;
-    /* height: 100%; */
+    
 }
 .contain{
     width: 100%;
@@ -152,32 +152,14 @@ main .contain a img:hover{
 @media screen and (max-width:1800px){
 
     .contain .swiper{
-        width: 80%;
         height: 50%;
-        margin-top:3% ;
-        display: flex;
-         
-    
        
     }    
-    .contain .content_text{
-        width: 60%;
-        color:rgb(255, 253, 246);
-        margin-left: 300px;
-        line-height: 1.5;
-        letter-spacing: 2px;
-    }
+
 }
 
 @media screen and (max-width:1700px){
 
-    .contain .swiper{
-        width: 80%;
-        height:45%;
-        margin-top:3% ;
-        display: flex;
-       
-    }
     
     .contain .swiper-slide {
         background-position: bottom;
@@ -191,49 +173,93 @@ main .contain a img:hover{
 }
 @media screen and (max-width:1600px){
 
+
+    .contain .content_bottom{
+        width: 100%;
+        height:1100px;
+    
+        background-image: url("/images/04-wars/P3_1700_BG.png");
+        background-position: center;
+
+    }
+ 
     .contain .swiper{
-        width: 80%;
-        height:45%;
-        margin-top:3% ;
-        display: flex;
+        margin-top:8% ;
        
     }
     
-    .contain .swiper-slide {
-        background-position: bottom;
-        background-size: contain;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-       
-    }
 
     .contain .content_text{
         width: 60%;
-        color:rgb(255, 253, 246);
-        margin-left: 230px;
-        line-height: 1.5;
-        letter-spacing: 2px;
+        margin-top:25px ;
+        margin-left: 270px;
     }
 
 }
 
-
-
-@media screen and (max-width:720px){
-    .top{
-        display: none;
+@media screen and (max-width:1400px){
+    .nav-link{
+        padding: 0;
     }
-
-    .banner_360{
-        display: block;
-        width: 100%;
-        padding-top: 100px;
-    }
-    .banner_360 img{
+    .contain .nav-link img{
         width: 100%;
     }
+    .contain .subtitle img{
+        width: 50%;
+    }
+    .contain .swiper{ 
+        margin:0 50px;
+        margin-top: 60px;
+
+    } 
+
+    .contain .content_bottom{
     
+        background-image: url("/images/04-wars/P3_1400_BG.png");
+        background-position: center;
+
+    }
+    .contain .content_text{
+        margin-top:0 ;
+        margin-left: 240px;   
+    }
+}
+@media screen and (max-width:1350px){
+    .contain .swiper-slide{
+        height: 80%;
+    }
+    .contain .content_bottom{
+    
+        background-image: url("/images/04-wars/P3_1350_BG.png");
+        background-position: center;
+
+    }
+
+}
+@media screen and (max-width:1270px){
+    .contain .swiper{
+        height: 400px;
+    }
+
+    .contain .swiper-slide{
+        height: 80%;
+    }
+
+    .contain .swiper-container{
+        
+        height: auto;
+        padding-bottom: 0;
+        margin-top: 5%;
+
+    }
+    .contain .content_text{
+        margin-left:20% ;
+    }
+
+
+}
+
+@media screen and (max-width:1100px){
     
     .contain{
         display: none;
@@ -241,7 +267,6 @@ main .contain a img:hover{
     main .contain_360{
         display:block;
         width: 100%;
-        /* height: calc(100% - 350px); */
         background-image: url('/images/04-wars/P2_360_new_2.png');
         background-color: #141A16;
         background-size: cover;
@@ -268,10 +293,12 @@ main .contain a img:hover{
         
     } 
     .swiper-button-next{
-       color: rgb(90, 22, 10);
+       color: rgb(232, 193, 53);
+       right: 10%;
     }
     .swiper-button-prev{
-        color: rgb(90, 22, 10);
+        color: rgb(232, 193, 53);
+        left: 10%;
     }
 
     .swiper-slide {
@@ -318,13 +345,15 @@ main .contain a img:hover{
 
     .ellipsis {
         font-size: 14px;
-        overflow: hidden;
+        display: -webkit-box;
         -webkit-line-clamp: 3;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+        overflow:hidden;
     }
     .modal-content{
-        background-color:unset
+        background-color:unset;
+        padding: 10px;
     }
     .modal-header{
         position: relative;
@@ -345,151 +374,41 @@ main .contain a img:hover{
         background-size:cover;
         background-position:center ;
         padding: 20px 10px;
-    } 
+    }
     .modal-body img {
         width: 100%; 
         margin-bottom: 10px;
+        padding:0 10px;
+
 
     }
-
     .modal-header img{
         width: 100%;
     }
-  
+    .modal-body .test{
+        width: 100%;
+        padding: 0 20px;
+        text-align:justify;
 
-
+    }
 
 }
 
-@media screen and (max-width:360px){
 
+@media screen and (max-width:720px){
     .top{
-        width: 100%;
-    background-color: rgb(163, 60, 60);
-    }
-    
-    .contain{
         display: none;
     }
-    main .contain_360{
-        display:block;
+
+    .banner_360{
+        display: block;
         width: 100%;
-        /* height: calc(100% - 350px); */
-        background-image: url('/images/04-wars/P2_360_background.png');
-        background-color: #141A16;
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding-top: 30px;
+        padding-top: 100px;
     }
-
-    body {
-        position: relative;
-        height: 100%;
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        margin: 0;
-        padding: 0;
-    }
-
-    .swiper-container {
-        width: 100%;
-        margin-top:20%;
-        margin-left: 0;
-        padding: 30px;
-        display: flex;
-        
-    } 
-    .swiper-button-next{
-       color: rgb(90, 22, 10);
-    }
-    .swiper-button-prev{
-        color: rgb(90, 22, 10);
-    }
-
-    .swiper-slide {
-        text-align: left;
-        font-size: 18px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-    .card{
-        background-color: #534741;
-        width: 60%;
-    }
-
-    .btn{
-        background: unset;
-        float: right;
-    }
-
-    .fas {
-        font-size: 15px;
-        color: rgb(245, 241, 235);
-
-
-    }
-    .card-title img{
+    .banner_360 img{
         width: 100%;
     }
-    .card-text{
-        color: rgb(245, 241, 235);
-        font-size: small;
-    }
-
-    .ellipsis {
-        font-size: 14px;
-        overflow: hidden;
-        -webkit-line-clamp: 3;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
-    .modal-content{
-        background-color:unset
-    }
-    .modal-header{
-        position: relative;
-    }
-    .close{
-
-        background-color: white;
-        border-radius: 20%;
-        position: absolute;
-        right: 5%;
-    }
-    .modal-dialog-scrollable{
-        display: unset;
-    }
-    .modal-body{ 
-        background-image: url('/images/04-wars/bg_360.png');
-
-        background-size:cover;
-        background-position:center ;
-        padding: 20px 10px;
-    } 
-    .modal-body img {
-        width: 100%; 
-        margin-bottom: 10px;
-
-    }
-
-    .modal-header img{
-        width: 100%;
-    }
-  
-
-
+    
 
 }
+
