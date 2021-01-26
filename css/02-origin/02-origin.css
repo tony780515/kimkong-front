@@ -53,7 +53,8 @@ img{
 
     color: rgb(255, 253, 246);
     position: absolute;
-    bottom: -18%;
+    /* 更改bottom */
+    bottom: -30%;
     right: 15%;
 }
 
@@ -102,14 +103,14 @@ img{
     background-image: url("/images/02-origin/P2-down_left.png");
     background-size: contain;
     background-repeat: no-repeat;
-    /* margin: 0 10px; */
     padding: 10px;
 
         
 }
 
 .introText {
-    width: auto;
+    /* width更新 */
+    width: 60%;
     color: rgb(255, 253, 246);
     font-size: 21px;
     position: absolute;
@@ -148,8 +149,22 @@ img{
 
     .intro_left{
         width: 100%;
+    }
+    .rightText{
+
+        right: 18%;
 
     }
+
+
+}
+@media screen and (max-width: 1380px){
+    .rightText{
+
+        right: 20%;
+
+    }
+
 
 }
 
@@ -171,17 +186,31 @@ img{
     }
 
 }
+@media screen and (max-width:1225px ){
+    .rightText{
+
+        right: 25%;
+
+    }
+
+
+}
 
 @media screen and (max-width: 1000px){
     
     img{
         margin-top: 10%;
         height: 90%;
-        /* width: 100%; */
     }
     
     .intro_left_img{
         width: 1000px;
+    }
+
+    .rightText{
+        bottom:-40%;
+        right: 20%;
+
     }
 
 }
@@ -191,6 +220,26 @@ img{
     img{
         height: 80%;
     }
+    .introText {
+        
+        font-size: 12px;
+        position: absolute;
+        top:18%;
+        left: 31%;    
+    }
+    .rightText{
+        bottom:-25%;
+        right: 25%;
+
+    }
+
+    .rightText span{
+        font-size: 14px;
+    }
+    
+    .rightText p{
+        font-size: 21px;
+    }
 
 }
 
@@ -199,12 +248,22 @@ img{
     img{
         height: 70%;
     }
+    .rightText{
+        bottom:-15%;
+        right: 25%;
+
+    }
 
 }
 @media screen and (max-width: 700px){
 
     img{
         height: 60%;
+    }
+    .rightText{
+        bottom:-3%;
+        right: 20%;
+
     }
 
 }
@@ -309,9 +368,12 @@ img{
 
     .intro_right{
         width: 100%;
+        height: 100px;
     }
     .intro_right_img{
+        display: block;
         width: 100%;
+        height: 100%;
         background-image: url("/images/02-origin/360px/P2.png");
         background-repeat: no-repeat;
         background-size: contain;
