@@ -54,7 +54,7 @@ img{
     color: rgb(255, 253, 246);
     position: absolute;
     /* 更改bottom */
-    bottom: -30%;
+    bottom: -18%;
     right: 15%;
 }
 
@@ -109,7 +109,6 @@ img{
 }
 
 .introText {
-    /* width更新 */
     width: 60%;
     color: rgb(255, 253, 246);
     font-size: 21px;
