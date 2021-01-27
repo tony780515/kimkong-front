@@ -91,6 +91,13 @@
     </nav>
     <!-- navbar 結束 -->
     <main>
+        <div class="banner-parallex" id="banner">
+            <div class="photo1" data-depth-y="0.5"><img src="/images/parallex/1.png"></div>
+            <div class="photo2" data-depth="0.5" data-depth-x="0.2"><img src="/images/parallex/2.png"></div>
+            <div class="photo3" data-depth-y="1" data-depth-X="0.2"><img src="/images/parallex/3.png"></div>
+            <div class="photo4" data-depth-x="0.2"><img src="/images/parallex/4.png"></div>
+            <div class="photo5" data-depth-y="0.2"><img src="/images/parallex/5二版.png"></div>
+        </div>
         <div class="top">
             <img src="/images/01-index/banner.jpg" alt="">
         </div>
@@ -895,6 +902,23 @@
 
     <script>
         AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        parallaxInstance = new Parallax( document.getElementById( "banner" ) , {
+            // 參數設定[註1]
+            // calibrateX: false,
+            // calibrateY: true,
+            // invertX: true,
+            // invertY: true,
+            // limitX: false,
+            // limitY: false,
+            // scalarX: 2,
+            // scalarY: 8,
+            // frictionX: 0.2,
+            // frictionY: 0.8
+
+        });
     </script>
     <!-- js結束 -->
 
