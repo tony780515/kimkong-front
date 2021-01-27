@@ -20,7 +20,7 @@ main{
 .top{
     width: 100%;
     height: auto;
-    padding-top: 100px;
+    padding-top: 90px;
 }
 .top img{
     width: 100%;
@@ -260,6 +260,11 @@ main .contain a img:hover{
 }
 
 @media screen and (max-width:1100px){
+    .top{
+        width: 100%;
+        height: auto;
+        padding-top: 80px;
+    }
     
     .contain{
         display: none;
@@ -403,7 +408,7 @@ main .contain a img:hover{
     .banner_360{
         display: block;
         width: 100%;
-        padding-top: 100px;
+        padding-top: 80px;
     }
     .banner_360 img{
         width: 100%;
