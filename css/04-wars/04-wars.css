@@ -364,15 +364,13 @@ main .contain a img:hover{
         position: relative;
     }
     .close{
-        color: black;
+        color: white;
         border-radius: 20%;
         position: absolute;
         right: 5%;
     }
 
-    .close span {
-        background-color: white;
-    }
+    
 
 
     .modal-dialog-scrollable{
