@@ -11,6 +11,52 @@ main{
     height:auto;
     background-color: #141A16;
 }
+.top {
+    display:none;
+}
+.banner-parallex {
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url(/images/parallex/banner背景.jpg);
+    overflow: hidden;
+    padding-top: 150px;
+}
+.photo1 {
+    margin-top: 5%;
+}
+
+.photo2 {
+    /* width: 25%; */
+    margin-top: 7%;
+    margin-left: 15%;
+}
+
+.photo2 img {
+    width: 100%;
+}
+
+.photo3 {
+    /* width: 25%; */
+    margin-top: 12%;
+    margin-left: 35%;
+}
+
+.photo3 img {
+    width: 100%;
+}
+
+.photo4 {
+    margin-top: 23%;
+    margin-left: 58%;
+    position: relative;
+    z-index: 1;
+}
+
+.photo5 {
+    margin-top: 8%;
+    margin-left: 75%;
+}
 .banner_360{
     display: none;
 }
@@ -172,7 +218,13 @@ main .contain a img:hover{
 
 }
 @media screen and (max-width:1600px){
+    .banner-parallex {
+        display: none;
+    }
 
+    .top {
+        display: block;
+    }
 
     .contain .content_bottom{
         width: 100%;
